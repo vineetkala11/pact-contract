@@ -1,0 +1,17 @@
+apply plugin: 'application'
+
+mainClassName = 'com.pact.consumer.Consumer'
+version = '2'
+dependencies {
+    compile 'com.mashape.unirest:unirest-java:1.4.9'
+    compile 'ch.qos.logback:logback-core:1.2.3'
+    compile 'ch.qos.logback:logback-classic:1.2.3'
+    compile 'org.apache.commons:commons-lang3:3.7'
+    // https://mvnrepository.com/artifact/com.google.code.gson/gson
+    compile group: 'com.google.code.gson', name: 'gson', version: '2.8.5'
+
+
+    compileOnly "org.projectlombok:lombok:1.16.16"
+    testCompile 'com.github.tomakehurst:wiremock:2.16.0'
+    testCompile 'au.com.dius.pact.consumer:junit:4.1.2'
+}

@@ -1,0 +1,6 @@
+apply plugin: 'application'
+
+dependencies {
+    // https://mvnrepository.com/artifact/au.com.dius/pact-jvm-provider-spring
+    compile group: 'au.com.dius', name: 'pact-jvm-provider-spring', version: '4.0.10'
+}
